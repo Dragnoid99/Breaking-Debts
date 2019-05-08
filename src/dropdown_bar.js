@@ -12,7 +12,7 @@ class DropdownBar extends React.Component{
     
      constructor(props){
       super(props);
-      this.state = {nameofpayee:"",amount:0,paidfor:"",transactionList:[],paye:"",paid:"",transaction:1,money:0,loans:"",to:""};
+      this.state = {nameofpayee:"",amount:"",paidfor:"",transactionList:[],paye:"",paid:"",transaction:1,money:0,loans:"",to:""};
       this.valueChangeHandler1 = this.valueChangeHandler1.bind(this);
       this.valueChangeHandler2 = this.valueChangeHandler2.bind(this);
       this.valueChangeHandler3 = this.valueChangeHandler3.bind(this);
@@ -50,7 +50,7 @@ class DropdownBar extends React.Component{
       this.setState({money: this.state.amount})
       this.setState({paye: this.state.nameofpayee})
       this.setState({paid: this.state.paidfor})
-      this.setState({amount:0, nameofpayee:"", paidfor:""});
+      this.setState({amount:"", nameofpayee:"", paidfor:""});
       
       
       
@@ -72,7 +72,7 @@ class DropdownBar extends React.Component{
           
         />
         <br/><br/>
-        <Input label="Enter Expense" floatingLabel="true" type="number" onChange={this.valueChangeHandler2}/>
+        <Input label="Enter Expense" floatingLabel="true" type="number" value={this.state.amount} onChange={this.valueChangeHandler2}/>
         <br/><br/>
         <Input
             label = "Paid for"
