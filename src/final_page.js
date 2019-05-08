@@ -20,7 +20,7 @@ class FinalPage extends React.Component{
    	            else 
    	            {  const temp = this.props.payingList.map((item)=>
    	              <Panel> <div>{item[0]} has to pay <FinalSpan spanList={item.slice(1)}/></div></Panel>);
-   	               return (<div style={divStyle}><ul>{temp}</ul></div>);
+   	               return (<div style={divStyle}><Panel><h2>To settle all the debts the following transactions have to be made:-</h2></Panel><ul>{temp}</ul></div>);
    	            }
    	        }
       }
