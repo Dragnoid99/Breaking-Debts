@@ -1,12 +1,12 @@
 {
-  "name": "Debtler",
+  "name": "Debt Calculating App",
   "version": "0.1.0",
   "private": true,
   
   "contributors": [
     {
-      "name": "Yash Porwal",
-      "email": "pyash@iitk.ac.in"
+      "name": "Akhilesh Sharma",
+      "email": "akhilesh2001delhi@gmail.com"
       
     }
   ],
